@@ -1,0 +1,42 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-header {
+  background-color: #198754;
+  color: white;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #198754 !important;
+}
+
+.btn-outline-dark {
+  border-radius: 30px;
+  padding: 6px 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #198754;
+  font-weight: 500;
+}
+
+.pagination .page-link {
+  color: #198754;
+}
+
+.pagination .active .page-link {
+  background-color: #198754;
+  border-color: #198754;
+  color: #fff;
+}

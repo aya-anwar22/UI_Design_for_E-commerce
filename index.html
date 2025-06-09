@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Style</title>
+    <link rel="icon" href="./images/loopstyle-logo.png" type="image/png" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- my file CSS -->
+     <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+<!-- Top Header -->
+  <div class="top-header border-bottom">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div class="contact-info text-dark small">
+        <i class="bi bi-telephone">(+20) 1097206111</i>
+        <span class="mx-3">|</span>
+        <i class="bi bi-geo-alt">Our location</i>
+      </div>
+      <div class="extras d-flex align-items-center small">
+    
+        <div class="container mt-3 text-end">
+            <a href="login.html" class="text-dark text-decoration-none fw-bold">👤 Log In / Sign Up</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="images/loopstyle-logo.png" alt="LoopStyle" height="40" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="category.html" id="categoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Categories
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+    <li><a class="dropdown-item" href="category.html?type=boys">Boys Clothes</a></li>
+    <li><a class="dropdown-item" href="category.html?type=girls">Girls Clothes</a></li>
+  </ul>
+</li>
+
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
+      <div class="d-flex align-items-center">
+        <a href="cart.html" class="position-relative"><i class="bi bi-bag"></i><span class="badge bg-success position-absolute top-0 start-100 translate-middle">2</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="hero d-flex align-items-center justify-content-between px-5 py-5 bg-white">
+        <div class="image-area">
+          <img src="images/hero-woman.png" alt="Fashion Girl" class="img-fluid" />
+          <div class="offer-text">
+            <h3>Big Offer</h3>
+            <p>50% OFF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero d-flex align-items-center justify-content-between px-5 py-5 bg-white">
+        <div class="image-area">
+          <img src="images/hero-men.png" alt="Men Fashion" class="img-fluid" />
+          <div class="offer-text">
+            <h3>New Arrival</h3>
+            <p>Up to 40% OFF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="hero d-flex align-items-center justify-content-between px-5 py-5 bg-white">
+        <div class="image-area">
+          <img src="images/hero-woman.png" alt="Kids Fashion" class="img-fluid" />
+          <div class="offer-text">
+            <h3>Kids Collection</h3>
+            <p>Buy 1 Get 1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</section>
+
+
+
+<!-- Filters + Products Section -->
+<div class="container my-5">
+  <div class="row">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <!-- Search Form -->
+      <form class="d-flex w-100 me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search for a product..." aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="col-md-3">
+      <div class="bg-light p-3 rounded mb-4">
+        <h5 class="mb-3">Category</h5>
+        <ul class="list-unstyled mb-4">
+          <li><a href="#" class="text-dark text-decoration-none d-block py-1">Boys Clothes</a></li>
+          <li><a href="#" class="text-dark text-decoration-none d-block py-1">Girls Clothes</a></li>
+        </ul>
+        <h6>Sort by:</h6>
+        <select class="form-select mb-3">
+          <option selected>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+        <h6>Price Range</h6>
+        <div class="form-check"><input class="form-check-input" type="radio" name="priceRange" id="p1"><label class="form-check-label" for="p1">EGP 0 - EGP 200</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="priceRange" id="p2"><label class="form-check-label" for="p2">EGP 200 - EGP 400</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="priceRange" id="p3"><label class="form-check-label" for="p3">EGP 400 - EGP 600</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="priceRange" id="p4"><label class="form-check-label" for="p4">EGP 600 - EGP 800</label></div>
+        <div class="form-check"><input class="form-check-input" type="radio" name="priceRange" id="p5"><label class="form-check-label" for="p5">EGP 800+</label></div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <ul class="nav nav-tabs" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="featured-tab" data-bs-toggle="tab" data-bs-target="#featured" type="button" role="tab">Featured</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button" role="tab">Popular</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab">New Added</button>
+          </li>
+        </ul>
+        <button class="btn btn-outline-dark">View More</button>
+      </div>
+
+      <div class="tab-content" id="productTabsContent">
+        <div class="tab-pane fade show active" id="featured" role="tabpanel">
+          <div class="row g-4">
+
+            <!-- Example of a product card dynamically rendered -->
+            <!-- Bootstrap CSS & JS (تأكد إنك ضيفتهم في صفحتك) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container py-4">
+
+  <!-- Product Card -->
+  <div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="card product-card h-100 border-0 shadow-sm">
+      <img src="images/jeans.png" class="card-img-top" alt="Product Image" loading="lazy">
+      <div class="card-body">
+        <h6 class="card-title">Jeans</h6>
+        <p class="card-text">$200</p>
+        <p class="card-text small text-muted">Gender: Male</p>
+        <p class="card-text">Short description ...</p>
+        <button 
+          class="btn btn-success btn-sm add-to-cart-btn" 
+          data-bs-toggle="modal" 
+          data-bs-target="#productModal" 
+          data-name="Jeans" 
+          data-price="200" 
+          data-description="product description ..." 
+          data-image="images/jeans.png"
+          data-brandid="BR123" 
+          data-quantity="1" 
+          data-gender="Male"
+        >
+          <i class="bi bi-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalProductImage" src="" alt="Product Image" class="img-fluid mb-3" />
+          <h6 id="modalProductName"></h6>
+          <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+          <p><strong>Brand Name:</strong> <span id="modalBrandId"></span></p>
+          <p><strong>Price:</strong> $<span id="modalPrice"></span></p>
+          <p><strong>Quantity:</strong> <span id="modalQuantity"></span></p>
+          <p><strong>Gender:</strong> <span id="modalGender"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Confirm Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // لما تضغط على زر "Add to Cart"
+  document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      // جلب البيانات من الـ data attributes
+      const name = this.getAttribute('data-name');
+      const description = this.getAttribute('data-description');
+      const brandId = this.getAttribute('data-brandid');
+      const price = this.getAttribute('data-price');
+      const quantity = this.getAttribute('data-quantity');
+      const gender = this.getAttribute('data-gender');
+      const image = this.getAttribute('data-image');
+
+      // تعيين البيانات في المودال
+      document.getElementById('modalProductName').textContent = name;
+      document.getElementById('modalDescription').textContent = description;
+      document.getElementById('modalBrandId').textContent = brandId;
+      document.getElementById('modalPrice').textContent = price;
+      document.getElementById('modalQuantity').textContent = quantity;
+      document.getElementById('modalGender').textContent = gender;
+      document.getElementById('modalProductImage').src = image;
+    });
+  });
+</script>
+
+
+            <!-- Repeat for other products -->
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="popular" role="tabpanel">
+          <!-- Example of a product card dynamically rendered -->
+            <div class="col-md-4">
+              <div class="card h-100 product-card">
+                <!-- Use first image or placeholder if none -->
+                <img src="images/jeans.png" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                  <h6 class="card-title">Jeans</h6>
+                  <p class="card-text">200</p>
+                  <p class="card-text small text-muted">Gender: Male</p>
+                  <p class="card-text">Short description ...</p>
+                  <button class="btn btn-success btn-sm add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#productModal" 
+                    data-name="Jeans" 
+                    data-price="200" 
+                    data-description="description... " 
+                    data-image="images/jeans.png">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="new" role="tabpanel">
+          <!-- Example of a product card dynamically rendered -->
+            <div class="col-md-4">
+              <div class="card h-100 product-card">
+                <!-- Use first image or placeholder if none -->
+                <img src="images/jeans.png" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                  <h6 class="card-title">Jeans</h6>
+                  <p class="card-text">200</p>
+                  <p class="card-text small text-muted">Gender: Male</p>
+                  <p class="card-text">Short description ...</p>
+                  <button class="btn btn-success btn-sm add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#productModal" 
+                    data-name="Jeans" 
+                    data-price="200" 
+                    data-description=" product description..." 
+                    data-image="images/jeans.png">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Product Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <img id="modalProductImage" src="" class="img-fluid rounded" alt="Product Image">
+          </div>
+          <div class="col-md-6">
+            <h3 id="modalProductName"></h3>
+            <h4 class="text-success" id="modalProductPrice"></h4>
+            <p id="modalProductDescription" class="mt-3"></p>
+            
+            <div class="mt-4">
+              <div class="mb-3">
+                <label for="sizeSelect" class="form-label">Size</label>
+                <select class="form-select" id="sizeSelect">
+                  <option selected>Select Size</option>
+                  <option value="S">Small (S)</option>
+                  <option value="M">Medium (M)</option>
+                  <option value="L">Large (L)</option>
+                  <option value="XL">Extra Large (XL)</option>
+                </select>
+              </div>
+              
+              <div class="mb-3">
+                <label for="colorSelect" class="form-label">Color</label>
+                <select class="form-select" id="colorSelect">
+                  <option selected>Select Color</option>
+                  <option value="Red">Red</option>
+                  <option value="Blue">Blue</option>
+                  <option value="Green">Green</option>
+                  <option value="Black">Black</option>
+                  <option value="White">White</option>
+                </select>
+              </div>
+              
+              <div class="mb-3">
+                <label for="quantityInput" class="form-label">Quantity</label>
+                <div class="input-group" style="width: 150px;">
+                  <button class="btn btn-outline-secondary" type="button" id="decrementBtn">-</button>
+                  <input type="number" class="form-control text-center" id="quantityInput" value="1" min="1">
+                  <button class="btn btn-outline-secondary" type="button" id="incrementBtn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">
+          <i class="bi bi-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <p>"This website is amazing! The quality is top-notch and the service is fantastic."</p>
+      <h4>- Sarah Mohamed</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Loved the handmade products. Will definitely come back again!"</p>
+      <h4>- Ahmed Ali</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Great customer service and beautiful designs. Highly recommend!"</p>
+      <h4>- Mona Adel</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Brands Section -->
+<section class="featured-brands py-5 bg-light">
+  <div class="container">
+    <h4 class="mb-4 text-center fw-bold">Featured Brands</h4>
+    <div class="row text-center align-items-center">
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 1</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 2</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 3</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 4</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 5</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <img src="images/brand1.png" class="img-fluid grayscale" alt="Brand">
+        <p class="mt-2">Brand 6</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+  <section class="about-section py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4" style="color: #198754;">About Loop Style</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="images/about-us.jpg" alt="About Loop Style" class="img-fluid rounded shadow" />
+        </div>
+
+    <div class="col-md-6">
+        <h2>About Loop Style</h2>
+        <p>
+        <strong>Loop Style</strong> is your ultimate fashion destination, offering trendy and stylish clothing exclusively for young men and women aged <strong>18 to 30</strong>. Founded with the vision of making high-quality fashion accessible to everyone, we curate collections that blend contemporary designs with timeless elegance.
+        </p>
+        <p>
+        Our team is passionate about delivering exceptional customer experiences and continuously updating our products to keep up with the latest fashion trends. Whether you're shopping for casual wear, or formal attire, Loop Style has something special just for you.
+        </p>
+        <a href="shop.html" class="btn btn-outline-success mt-3">Shop Now</a>
+
+    </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-success">Contact Us</h2>
+      <p class="text-center mb-5">Have a question or need help? We'd love to hear from you!</p>
+
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success px-4">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="bg-light p-4 rounded shadow-sm h-100">
+            <h5>Get In Touch</h5>
+            <p><i class="bi bi-geo-alt me-2 text-success"></i> 123 Loop Street, Cairo, Egypt</p>
+            <p><i class="bi bi-envelope me-2 text-success"></i> contact@loopstyle.com</p>
+            <p><i class="bi bi-telephone me-2 text-success"></i> (+20) 109 720 6111</p>
+            <h6 class="mt-4">Working Hours</h6>
+            <p>Mon - Fri: 9am - 6pm<br>Saturday: 10am - 3pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3">Subscribe to Our Newsletter</h3>
+                    <p class="mb-4">Get the latest updates on new products and upcoming sales</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-success btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/loopstyle-logo.png" alt="LoopStyle" height="40" class="mb-3">
+                    <p>Your destination for trendy fashion and for young adults.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Men's Clothing</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Women's Clothing</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Customer Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Track Order</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shipping Info</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Our Story</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Payment Methods</h5>
+                    <div class="payment-methods">
+                        
+                        <img src="images/payment.png" alt="PayPal" class="img-fluid mb-2" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 LoopStyle. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="bi bi-heart-fill text-danger"></i> in Egypt</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+        <!-- Modal content similar to the product modal from homepage -->
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-dark position-fixed bottom-0 end-0 m-3 d-none">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/category.js"></script>
+    
+    <script>
+        // Initialize AOS animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize tooltips
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+
+        // Get category from URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryType = urlParams.get('type');
+            
+            if (categoryType === 'boys') {
+                document.getElementById('categoryTitle').textContent = 'Boys Clothes';
+                document.getElementById('categoryHeading').textContent = 'Boys Clothing Collection';
+                document.getElementById('categoryDescription').textContent = 'Discover our trendy collection of boys clothing for all occasions.';
+            } else if (categoryType === 'girls') {
+                document.getElementById('categoryTitle').textContent = 'Girls Clothes';
+                document.getElementById('categoryHeading').textContent = 'Girls Fashion Collection';
+                document.getElementById('categoryDescription').textContent = 'Explore our stylish girls clothing perfect for any season.';
+            }
+        });
+    </script>
+</body>
+</html>

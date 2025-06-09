@@ -1,0 +1,33 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-header {
+  background-color: #198754;
+  color: white;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #198754 !important;
+}
+
+.contact-section h2 {
+  font-weight: bold;
+}
+
+.contact-section form .form-control {
+  border-radius: 0.5rem;
+}
+
+.contact-section form button {
+  border-radius: 2rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+footer {
+  background-color: #000;
+}
